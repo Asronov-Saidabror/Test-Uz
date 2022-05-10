@@ -137,12 +137,12 @@
     flex-direction: column;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 .header {
-    background: url('../images/l.png')no-repeat center / cover;
+    background: url('../images/l.png') no-repeat center / cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -157,33 +157,30 @@ html{
     margin: 0;
 }
 
-.nav{
+.nav {
     width: 100%;
-    padding: 15px 100px;
+    padding: 18px 100px;
     z-index: 999;
     position: fixed;
     background: rgba(0, 0, 0, 0);
     transition: 0.4s ease;
 }
 
-nav.nav2{
+nav.nav2 {
     background: var(--red);
-    padding: 10px 100px;
+    padding: 8px 100px;
 }
+
 nav.nav3 {
-    background: var(--blue);
-    padding: 10px 100px;
-}
-nav.nav4 {
-    background: yellowgreen;
-    padding: 10px 100px;
+    background: var(--black);
+    padding: 8px 100px;
 }
 
 .nav_list {
     list-style: none;
 }
 
-.nav_list li{
+.nav_list li {
     padding: 15px;
     position: relative;
 }
@@ -194,7 +191,7 @@ nav.nav4 {
     font-size: var(--link);
 }
 
-.nav_list li::after{
+.nav_list li::after {
     content: '';
     height: 3px;
     width: 0;
@@ -205,7 +202,7 @@ nav.nav4 {
     transition: 0.5s ease;
 }
 
-.nav_list li:hover::after{
+.nav_list li:hover::after {
     width: 100%;
 }
 
@@ -219,7 +216,7 @@ nav.nav4 {
     color: var(--white);
 }
 
-.s2:hover{
+.s2:hover {
     background: rgba(0, 0, 0, 0.219);
 }
 
@@ -230,7 +227,7 @@ nav.nav4 {
     box-shadow: inset 0 0 8px 5px rgba(30, 30, 30, 0.247);
 }
 
-.s1:hover{
+.s1:hover {
     box-shadow: none;
 }
 
@@ -240,12 +237,12 @@ nav.nav4 {
     margin-right: 10px;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: var(--white);
 }
 
-.test_bosh{
+.test_bosh {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,7 +250,7 @@ nav.nav4 {
     margin-top: 17%;
 }
 
-.header_title{
+.header_title {
     color: var(--white);
     font-size: var(--title-text);
     text-align: center;
@@ -264,7 +261,7 @@ nav.nav4 {
     margin-bottom: 50px;
 }
 
-.submit_button{
+.submit_button {
     width: 270px;
     height: 70px;
     background: var(--yellow);
@@ -277,11 +274,11 @@ nav.nav4 {
     transform: rotate(10deg);
 }
 
-.submit_button:hover{
+.submit_button:hover {
     transform: rotate(0deg);
 }
 
-.button_link{
+.button_link {
     text-align: center;
     font-size: var(--text);
     color: var(--blue);
@@ -289,24 +286,24 @@ nav.nav4 {
     margin-right: 15px;
 }
 
-.section-1{
+.section-1 {
     background: rgb(250, 250, 250);
     padding-bottom: 60px;
 }
 
-.main_title{
+.main_title {
     text-align: center;
     font-size: var(--max-text);
     padding: 60px 0 30px 0;
 }
 
-.top_cards{
+.top_cards {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main_card{
+.main_card {
     width: 300px;
     min-height: 500px;
     background: rgb(255, 255, 255);
@@ -316,47 +313,47 @@ nav.nav4 {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.116);
 }
 
-.main_card:hover{
+.main_card:hover {
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.171);
 }
 
-.content{
+.content {
     padding: 10px;
 }
 
-.main_card img{
+.main_card img {
     width: 300px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 200px;
 }
 
-.bot_cards{
+.bot_cards {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card_title{
+.card_title {
     text-align: center;
     font-size: var(--text);
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-.card_text{
+.card_text {
     text-align: center;
     font-size: var(--link);
     margin-bottom: 20px;
 }
 
-.view{
+.view {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card_view{
+.card_view {
     width: 130px;
     height: 40px;
     border: 1px solid var(--blue);
@@ -372,7 +369,7 @@ nav.nav4 {
     color: var(--black);
 }
 
-.card_view span{
+.card_view span {
     width: 0;
     height: 100%;
     background: var(--blue);
@@ -384,15 +381,15 @@ nav.nav4 {
     z-index: -1;
 }
 
-.card_view:hover span{
+.card_view:hover span {
     width: 100%;
 }
 
-.card_view:hover{
+.card_view:hover {
     border: none;
 }
 
-.about{
+.about {
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -400,25 +397,25 @@ nav.nav4 {
     justify-content: center;
 }
 
-.about h3{
+.about h3 {
     text-align: center;
     font-size: var(--title-text);
     padding-bottom: 40px;
 }
 
-.about p{
+.about p {
     text-align: center;
     font-size: var(--link);
 }
 
-.footer{
+.footer {
     background: var(--black);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-32{
+.container-32 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,46 +423,47 @@ nav.nav4 {
     padding-bottom: 50px;
 }
 
-.pw{
+.pw {
     color: var(--white);
     font-size: 14px;
 }
 
-.ps{
+.ps {
     font-size: var(--min-text);
     color: var(--white);
     margin-bottom: 15px;
 }
 
-.container-sc2{
+.container-sc2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-sc2 img{
+.container-sc2 img {
     width: 800px;
     margin-top: 40px;
 }
 
-.section-2{
-    background: url('../images/240_F_454576300_AN2dAthqhFl11iIoqHBgl3mpyXyzREnx.jpg')no-repeat center / cover;
+.section-2 {
+    background: url('../images/240_F_454576300_AN2dAthqhFl11iIoqHBgl3mpyXyzREnx.jpg') no-repeat center / cover;
     min-height: 550px;
     padding: 40px 60px;
 }
 
-.conta_title{
+.conta_title {
     font-size: var(--title-text);
     text-align: center;
     margin-bottom: 40px;
 }
 
-.inp_name{
+.inp_name {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.inp_name input{
+
+.inp_name input {
     width: 240px;
     height: 30px;
     background: transparent;
@@ -476,13 +474,13 @@ nav.nav4 {
     padding: 10px;
 }
 
-.inp_emails{
+.inp_emails {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.email{
+.email {
     width: 500px;
     height: 30px;
     background: transparent;
@@ -493,7 +491,7 @@ nav.nav4 {
     padding: 10px;
 }
 
-.message{
+.message {
     width: 500px;
     height: 200px;
     background: transparent;
@@ -505,13 +503,13 @@ nav.nav4 {
     resize: none;
 }
 
-.mas{
+.mas {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.send_mes{
+.send_mes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,12 +522,12 @@ nav.nav4 {
     margin-left: 50%;
 }
 
-.send_mes a{
+.send_mes a {
     text-decoration: none;
     color: var(--black);
 }
 
-.qorongi{
+.qorongi {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -543,23 +541,26 @@ nav.nav4 {
     align-items: center;
 }
 
-.oq{
+.oq {
     width: 50%;
     min-height: 100px;
     background: var(--white);
+    border-radius: 10px;
 }
 
-.quiz_title{
+.quiz_title {
     font-size: var(--text);
     text-align: center;
     margin: 40px 0 20px 0;
 }
 
-.ggg{
-    display: flex;align-items: center;justify-content: center;
+.ggg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hsdjfkbl{
+.hsdjfkbl {
     width: 95%;
     border-top: none;
     border-left: none;
@@ -570,13 +571,14 @@ nav.nav4 {
     outline: none;
 }
 
-.buttonslar{
+.buttonslar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: 20px;
 }
 
-.submit-btn{
+.submit-btn {
     width: 150px;
     display: flex;
     align-items: center;
@@ -584,12 +586,12 @@ nav.nav4 {
     height: 40px;
     color: var(--white);
     cursor: pointer;
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 20px 0;
     background: var(--blue);
     border-radius: 10px;
 }
 
-.cansel-btn{
+.cansel-btn {
     width: 150px;
     display: flex;
     align-items: center;
@@ -597,18 +599,44 @@ nav.nav4 {
     height: 40px;
     background: var(--white-bl);
     cursor: pointer;
-    margin: 20px;
+    margin: 0 20px 20px;
     color: var(--blue);
     border-radius: 10px;
 }
 
-.copy{
+.copy {
     display: none;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
 }
-.copy h4{
+
+.copy h4 {
     text-align: center;
     color: #fff;
+}
+.ndso{
+    text-align: center;
+    color: var(--red);
+    font-size: 16px;
+    margin-top: 15px;
+    display: none;
+}
+.submit_buttond{
+    width: 250px;
+    height: 50px;
+    border: 2px solid var(--green-y);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.button_linkd{
+    color: red;
+    font-size: 20px;
+}
+.submit_buttond:hover{
+    background: var(--green-y);
 }

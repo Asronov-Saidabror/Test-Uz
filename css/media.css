@@ -8,58 +8,90 @@
 
 */
 
-@media(max-width: 1200px){
-    .container-sc2 img{
+@media(max-width: 1200px) {
+    .container-sc2 img {
         width: 600px;
         margin-top: 40px;
     }
 }
-@media(max-width: 992px){
-    .container-sc2 img{
+
+@media(max-width: 1050px) {
+    .nav_link {
+        font-size: 18px;
+    }
+    .header_title {
+        font-size: 58px;
+    }
+}
+
+@media(max-width: 1010px) {
+    .container-sc2 img {
         width: 500px;
         margin-top: 30px;
     }
+
     .nav_link {
         font-size: 17px;
     }
-    .nav_list li{
+
+    .nav_list li {
         padding: 10px;
     }
-    .nav{
+
+    .nav {
         padding: 15px 80px;
     }
-    .nav.nav2{
-        padding: 10px 80px;
+
+    nav.nav2 {
+        background: var(--red);
+        padding: 8px 80px;
     }
-    .header_title{
+
+    nav.nav3 {
+        background: var(--blue);
+        padding: 8px 80px;
+    }
+
+    nav.nav4 {
+        background: yellowgreen;
+        padding: 8px 80px;
+    }
+
+    .header_title {
         font-size: 55px;
     }
-    .about h3{
+
+    .about h3 {
         font-size: 50px;
     }
-    .test_bosh{
+
+    .test_bosh {
         margin-top: 40%;
     }
-    
+
 }
-@media(max-width: 768px){
-    .nav_list{
+
+@media(max-width: 880px) {
+    .nav_list {
         display: none;
     }
-    .menuBtn{
-        background: url('../images/menu.png')no-repeat center / cover;
+
+    .menuBtn {
+        background: url('../images/menu.png') no-repeat center / cover;
         width: 30px;
         height: 30px;
         cursor: pointer;
         transition: 0.5s ease;
     }
-    .menuBtn.active{
+
+    .menuBtn.active {
         z-index: 999;
         filter: invert(1);
         transition: 0.5s ease;
-        background: url('../images/cancel.png')no-repeat center / cover;
+        background: url('../images/cancel.png') no-repeat center / cover;
     }
-    .nav_list.active{
+
+    .nav_list.active {
         z-index: 888;
         position: fixed;
         background: #fff;
@@ -74,88 +106,132 @@
         flex-direction: column;
         box-shadow: 0 5px 25px rgb(0, 0, 0);
     }
-    .nav_link{
+
+    .nav_link {
         color: black;
         font-size: 22px;
     }
-    .nav_list li{
+
+    .nav_list li {
         margin: 20px;
     }
-    .sign{
+
+    .sign {
         margin-top: 30px;
     }
-    .container-sc2 img{
+
+    .container-sc2 img {
         display: none;
     }
-    .section-2{
+
+    .section-2 {
         background: rgb(224, 224, 224);
     }
-    .inp_name, .inp_emails, .mas{
+
+    .inp_name,
+    .inp_emails,
+    .mas {
         justify-content: center;
     }
 }
-@media(max-width: 576px){
-    .nav{
+
+@media(max-width: 670px) {
+    .nav {
         padding: 15px 70px;
     }
-    .nav.nav2{
+
+    .nav.nav2 {
         padding: 10px 70px;
     }
-    .test_bosh{
+
+    .test_bosh {
         margin-top: 40%;
     }
-    .top_cards, .bot_cards{
+
+    .top_cards,
+    .bot_cards {
         flex-direction: column;
     }
-    .container-32{
+
+    .container-32 {
         display: none;
     }
-    .copy{
+
+    .copy {
         display: flex;
     }
-    .inp_name input{
+
+    .inp_name input {
         margin-left: 0;
     }
 }
-@media(max-width: 400px){
-    .inp_name{
+
+@media(max-width: 450px) {
+    .inp_name {
         display: block;
     }
-    .nav{
+
+    .nav {
         padding: 15px 60px;
     }
-    .nav.nav2{
+
+    .nav.nav2 {
         padding: 10px 60px;
     }
-    .header_title{
+
+    .header_title {
         font-size: 45px;
     }
-    .submit_button{
+
+    .submit_button {
         width: 240px;
         height: 60px;
     }
-    .button_link{
+
+    .button_link {
         font-size: 20px;
     }
 }
-@media(max-width: 320px){
-    .conta_title{
+
+@media(max-width: 360px) {
+    .conta_title {
         font-size: 20px;
     }
-    .logo h2{
+
+    .logo h2 {
         font-size: 20px;
     }
-    .nav{
+
+    .nav {
         padding: 15px 40px;
     }
-    .nav.nav2{
+
+    .nav.nav2 {
         padding: 10px 40px;
     }
-    .about h3{
+
+    .about h3 {
         font-size: 40px;
     }
-    .section-2{
+
+    .section-2 {
         display: none;
     }
-    
+
+}
+@media(max-width: 310px) {
+    .main_card{
+        width: 250px;
+        min-height: 400px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_card img{
+        display: none;
+    }
+    .section-3{
+        display: none;
+    }
 }
