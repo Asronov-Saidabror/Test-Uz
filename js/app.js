@@ -22,5 +22,5 @@ window.addEventListener('DOMContentLoaded', function () {
 const submi = document.querySelector('.submit_button')
 
 submi.addEventListener('click', function() {
-    location.href = 'Quiz/sss.html'
+    location.href = '#teskt'
 })

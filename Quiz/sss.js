@@ -10,11 +10,13 @@ function qoraytirish() {
         qora.style.opacity = 1
         qora.style.display = 'flex'
     })
-    submmit.addEventListener('click', function() {
-        if (input.value != '') {
-            location.href = 'test.html'
-        } else if (input.value == '') {
-            ismYuq.style.display = 'block'
+    document.addEventListener('keydown', e => {
+        if (e.keyCode === 13) {
+            if (input.value != '') {
+                location.href = 'test.html'
+            } else if (input.value == '') {
+                ismYuq.style.display = 'block'
+            }
         }
     })
     reset.addEventListener('click', function() {
@@ -22,3 +24,4 @@ function qoraytirish() {
     })
 }
 qoraytirish()
+
