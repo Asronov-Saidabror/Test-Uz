@@ -31,5 +31,5 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loader.style.display = 'none'
         web.style.display = 'block'
-    }, 500);
+    }, 1000);
 })

@@ -22,4 +22,4 @@ const web = document.querySelector('.web')
 setTimeout(() => {
     loader.style.display = 'none'
     web.style.display = 'block'
-}, 500);
+}, 1000);
