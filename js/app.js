@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.nav');
@@ -21,14 +20,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
 const submi = document.querySelector('.submit_button')
 
-submi.addEventListener('click', function() {
+submi.addEventListener('click', function () {
     location.href = '#teskt'
 })
 
-const loader = document.querySelector('.loader')
-const web = document.querySelector('.web')
+window.addEventListener('DOMContentLoaded', () => {
+    const loader = document.querySelector('.loader')
+    const web = document.querySelector('.web')
 
-setTimeout(() => {
-    loader.style.display = 'none'
-    web.style.display = 'block'
-}, 2000);
+    setTimeout(() => {
+        loader.style.display = 'none'
+        web.style.display = 'block'
+    }, 500);
+})
