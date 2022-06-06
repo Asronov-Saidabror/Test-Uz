@@ -24,3 +24,11 @@ const submi = document.querySelector('.submit_button')
 submi.addEventListener('click', function() {
     location.href = '#teskt'
 })
+
+const loader = document.querySelector('.loader')
+const web = document.querySelector('.web')
+
+setTimeout(() => {
+    loader.style.display = 'none'
+    web.style.display = 'block'
+}, 2000);

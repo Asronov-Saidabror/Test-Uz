@@ -136,6 +136,9 @@
 }
 
 @media(max-width: 670px) {
+    .oq{
+        width: 70%;
+    }
     .nav {
         padding: 15px 70px;
     }
@@ -194,6 +197,9 @@
 }
 
 @media(max-width: 360px) {
+    .oq{
+        width: 85%;
+    }
     .conta_title {
         font-size: 20px;
     }

@@ -15,3 +15,11 @@ for (let i = 0; i < tek.length; i++) {
     alert(`To'g'ri javoblar soni ${e} ta`)
 })
 }
+
+const loader = document.querySelector('.loader')
+const web = document.querySelector('.web')
+
+setTimeout(() => {
+    loader.style.display = 'none'
+    web.style.display = 'block'
+}, 2000);
