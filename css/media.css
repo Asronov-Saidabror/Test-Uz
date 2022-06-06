@@ -19,6 +19,7 @@
     .nav_link {
         font-size: 18px;
     }
+
     .header_title {
         font-size: 58px;
     }
@@ -136,9 +137,10 @@
 }
 
 @media(max-width: 670px) {
-    .oq{
+    .oq {
         width: 70%;
     }
+
     .nav {
         padding: 15px 70px;
     }
@@ -197,9 +199,10 @@
 }
 
 @media(max-width: 360px) {
-    .oq{
+    .oq {
         width: 85%;
     }
+
     .conta_title {
         font-size: 20px;
     }
@@ -225,8 +228,9 @@
     }
 
 }
+
 @media(max-width: 310px) {
-    .main_card{
+    .main_card {
         width: 250px;
         min-height: 400px;
         padding: 15px;
@@ -234,10 +238,36 @@
         align-items: center;
         justify-content: center;
     }
-    .main_card img{
+
+    .main_card img {
         display: none;
     }
-    .section-3{
+
+    .section-3 {
         display: none;
+    }
+
+    .buttonslar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        margin: 0 0 20px 0;
+    }
+
+    .header_title {
+        font-size: 35px;
+    }
+
+    .submit_buttond {
+        width: 200px;
+        height: 40px;
+    }
+
+    .quiz_title {
+        font-size: 24px;
     }
 }

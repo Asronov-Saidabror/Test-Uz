@@ -6,7 +6,7 @@ function qoraytirish() {
         input = document.querySelector('.hsdjfkbl'),
         ismYuq = document.querySelector('.ndso');
 
-    ism.addEventListener('click', function() {
+    ism.addEventListener('click', function () {
         qora.style.opacity = 1
         qora.style.display = 'flex'
     })
@@ -19,16 +19,15 @@ function qoraytirish() {
             }
         }
     })
-    submmit.addEventListener('click', function() {
+    submmit.addEventListener('click', function () {
         if (input.value != '') {
             location.href = 'test.html'
         } else if (input.value == '') {
             ismYuq.style.display = 'block'
         }
     })
-    reset.addEventListener('click', function() {
+    reset.addEventListener('click', function () {
         location.reload()
     })
 }
 qoraytirish()
-
