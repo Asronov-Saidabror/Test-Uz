@@ -166,15 +166,12 @@
         display: flex;
     }
 
-    .inp_name input {
-        margin-left: 0;
+    .inp_name, .inp_emails input, .mas textarea {
+        width: 300px;
     }
 }
 
 @media(max-width: 450px) {
-    .inp_name {
-        display: block;
-    }
 
     .nav {
         padding: 15px 60px;

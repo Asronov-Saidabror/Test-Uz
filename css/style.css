@@ -287,15 +287,24 @@ nav.nav3 {
     margin-right: 15px;
 }
 
-.section-1 {
-    background: rgb(250, 250, 250);
-    padding-bottom: 60px;
+.section-1{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: rgb(255, 255, 255);
 }
+
+.tugmalar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .main_title {
     text-align: center;
     font-size: var(--max-text);
-    padding: 60px 0 30px 0;
+    padding: 20px 0 30px 0;
 }
 
 .top_cards {
@@ -391,7 +400,7 @@ nav.nav3 {
     border: none;
 }
 
-.about {
+.about, .abou {
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -399,11 +408,23 @@ nav.nav3 {
     justify-content: center;
 }
 
+.mini_section-1{
+    display: none;
+}
+
 .about h3 {
     text-align: center;
     font-size: var(--title-text);
     padding-bottom: 40px;
 }
+
+.abou h3 {
+    text-align: center;
+    font-size: var(--max-text);
+    padding-bottom: 40px;
+}
+
+
 
 .about p {
     text-align: center;
@@ -447,10 +468,46 @@ nav.nav3 {
     margin-top: 40px;
 }
 
+.container-sp2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-sp2 img {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.bow{
+    width: 180px;
+    height: 50px;
+    background: rgb(57, 57, 57);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+.bow:hover{
+    background: #000;
+}
+
 .section-2 {
     background: url('../images/240_F_454576300_AN2dAthqhFl11iIoqHBgl3mpyXyzREnx.jpg') no-repeat center / cover;
     min-height: 550px;
     padding: 40px 60px;
+}
+
+.conta_send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .conta_title {
@@ -466,14 +523,14 @@ nav.nav3 {
 }
 
 .inp_name input {
-    width: 240px;
+    width: 500px;
     height: 30px;
     background: transparent;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
     border: none;
     outline: none;
-    margin: 10px;
     padding: 10px;
+    margin: 0 10px 10px 0px;
 }
 
 .inp_emails {
@@ -521,7 +578,6 @@ nav.nav3 {
     border-radius: 20px;
     cursor: pointer;
     border: none;
-    margin-left: 50%;
 }
 
 .send_mes a {
@@ -648,7 +704,7 @@ nav.nav3 {
 }
 
 .loader {
-    background: #000;
+    background: rgb(0, 0, 0);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -687,7 +743,7 @@ nav.nav3 {
     width: 100px;
     height: 200px;
     border-radius: 5px;
-    animation: zar 1s linear infinite;
+    animation: zar 2s linear infinite;
 }
 
 @keyframes zar {
@@ -704,4 +760,24 @@ nav.nav3 {
 
 .web {
     display: none;
+}
+.button{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 20px 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+}
+.button:hover{
+    box-shadow: none;
+}
+.N1{
+    background: #000;
+    color: #fff;
 }
