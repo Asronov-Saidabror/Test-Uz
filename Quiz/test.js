@@ -19,12 +19,10 @@ for (let i = 0; i < tek.length; i++) {
 const loader = document.querySelector('.loader')
 const web = document.querySelector('.web')
 
-setTimeout(() => {
+window.addEventListener('load', function () {
     loader.style.display = 'none'
     web.style.display = 'block'
-}, 3000);
-
-
+})
 
 
 // boshqa
@@ -34,7 +32,7 @@ const ff = document.querySelectorAll('#f'),
     qor = document.querySelector('.qorongi'),
     qor2 = document.querySelector('.qorongi2'),
     tim = document.querySelector('.time'),
-    tb = document.querySelector('.TBody'),
+    tb1 = document.querySelector('.TBody'),
     tb2 = document.querySelector('.TBody2'),
     tb3 = document.querySelector('.TBody3'),
     tb4 = document.querySelector('.TBody4'),
@@ -45,9 +43,10 @@ const ff = document.querySelectorAll('#f'),
     tb9 = document.querySelector('.TBody9'),
     tb0 = document.querySelector('.TBody0'),
     qol = document.querySelector('.qolgani');
-
-var NT = 1
-
+    
+    let NT = 1
+    
+    qol.innerHTML = `${NT}/10`
 for (let i = 0; i < tt.length; i++) {
     tt[i].addEventListener('click', function () {
         qor.style = `
@@ -56,9 +55,9 @@ for (let i = 0; i < tt.length; i++) {
         `
         setTimeout(() => {
             tb2.style.display = 'flex'
-            tb.style.display = 'none'
+            tb1.style.display = 'none'
             timeLine()
-            NT + 1
+            qol.innerHTML = `${NT + 1}/10`
             tim.style.transform = 'translateX(0)'
             qor.style = `
             display: none;
@@ -74,8 +73,9 @@ for (let i = 0; i < ff.length; i++) {
         opacity: 1;
         `
         setTimeout(() => {
+            qol.innerHTML = `${NT + 1}/10`
             tb2.style.display = 'flex'
-            tb.style.display = 'none'
+            tb1.style.display = 'none'
             qor2.style = `
             display: none;
             opacity: 0;
@@ -86,7 +86,6 @@ for (let i = 0; i < ff.length; i++) {
 
 function timeLine() {
     tim.style = `
-    transform: translateX(0);
+        transform: translateX(0);
     `
 }
-qol.innerHTML = `${NT}/10`

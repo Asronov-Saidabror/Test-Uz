@@ -287,14 +287,14 @@ nav.nav3 {
     margin-right: 15px;
 }
 
-.section-1{
+.section-1 {
     /* display: flex;
     align-items: center;
     justify-content: center; */
     background: rgb(255, 255, 255);
 }
 
-.tugmalar{
+.tugmalar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,13 +311,14 @@ nav.nav3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main_card {
-    width: 300px;
-    min-height: 500px;
+    width: 310px;
+    min-height: 530px;
     background: rgb(255, 255, 255);
-    margin: 30px;
+    margin: 40px;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.116);
@@ -329,11 +330,11 @@ nav.nav3 {
 }
 
 .content {
-    padding: 10px;
+    padding: 15px;
 }
 
 .main_card img {
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 200px;
@@ -400,7 +401,8 @@ nav.nav3 {
     border: none;
 }
 
-.about, .abou {
+.about,
+.abou {
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -408,7 +410,7 @@ nav.nav3 {
     justify-content: center;
 }
 
-.mini_section-1{
+.mini_section-1 {
     display: none;
 }
 
@@ -468,7 +470,7 @@ nav.nav3 {
     margin-top: 40px;
 }
 
-.container-sp2{
+.container-sp2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -480,7 +482,7 @@ nav.nav3 {
     margin-bottom: 30px;
 }
 
-.bow{
+.bow {
     width: 180px;
     height: 50px;
     background: rgb(57, 57, 57);
@@ -493,7 +495,8 @@ nav.nav3 {
     margin-bottom: 50px;
     text-decoration: none;
 }
-.bow:hover{
+
+.bow:hover {
     background: #000;
 }
 
@@ -503,7 +506,7 @@ nav.nav3 {
     padding: 40px 60px;
 }
 
-.conta_send{
+.conta_send {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -761,7 +764,8 @@ nav.nav3 {
 .web {
     display: none;
 }
-.button{
+
+.button {
     width: 120px;
     height: 50px;
     display: flex;
@@ -774,10 +778,108 @@ nav.nav3 {
     transition: 0.3s ease;
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
 }
-.button:hover{
+
+.button:hover {
     box-shadow: none;
 }
-.N1{
+
+.N1 {
     background: #000;
     color: #fff;
+}
+
+.addButton {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.4s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.iconBox {
+    width: 60px;
+    height: 60px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blackBg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBox {
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 7px rgba(137, 137, 137, 0.622) inset;
+}
+
+.Tinp {
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 3px rgba(137, 137, 137, 0.622) inset;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Tarea {
+    width: 350px;
+    height: 150px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 3px rgba(137, 137, 137, 0.622) inset;
+    border-radius: 5px;
+    padding: 7px;
+    resize: none;
+}
+
+.addb,
+.addc {
+    width: 150px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sdada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
