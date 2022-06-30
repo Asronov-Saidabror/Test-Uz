@@ -109,4 +109,5 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 0;
         `
     })
+    var s = scrollr.init()
 })
