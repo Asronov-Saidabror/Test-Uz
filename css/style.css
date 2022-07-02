@@ -471,7 +471,16 @@ nav.nav3 {
     border: none;
 }
 
-.about,
+.about {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    left: -500px;
+    transition: 0.5s;
+}
 .abou {
     padding: 60px;
     display: flex;
@@ -538,6 +547,9 @@ nav.nav3 {
 .container-sc2 img {
     width: 800px;
     margin-top: 40px;
+    right: -500px;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .container-sp2 {
@@ -981,6 +993,9 @@ nav.nav3 {
     background: rgb(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
+    left: -500px;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .devBox::before {

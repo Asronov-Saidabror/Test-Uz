@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     window.addEventListener('scroll', function () {
         const sfkjndgb = document.querySelector('.sfkjndgb');
-        if (window.scrollY > 1700) {
+        if (window.scrollY > 1800) {
             sfkjndgb.style = `
             left: 0;
             `
@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     window.addEventListener('scroll', function () {
         const dawdawd = document.querySelector('.dawdawd');
-        if (window.scrollY > 1700) {
+        if (window.scrollY > 1800) {
             dawdawd.style = `
             right: 0;
             `
@@ -91,13 +91,50 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     window.addEventListener('scroll', function () {
         const formDiv = document.querySelector('.formDiv');
-        if (window.scrollY > 1800) {
+        if (window.scrollY > 1600) {
             formDiv.style = `
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY > 2200) {
+        } if (window.scrollY > 2400) {
             formDiv.style = `
+            opacity: 0;
+            right: -500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const about = document.querySelector('.about');
+        if (window.scrollY > 2400) {
+            about.style = `
+            opacity: 1;
+            left: 0;
+            `
+        } if (window.scrollY > 2800) {
+            about.style = `
+            opacity: 0;
+            left: -500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const devBox = document.querySelector('.devBox');
+        if (window.scrollY > 2800) {
+            devBox.style = `
+            opacity: 1;
+            left: 0;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const ompoaef = document.querySelector('.container-sc2 img');
+        if (window.scrollY > 2400) {
+            ompoaef.style = `
+            opacity: 1;
+            right: 0;
+            `
+        } if (window.scrollY > 2800) {
+            ompoaef.style = `
             opacity: 0;
             right: -500px;
             `
