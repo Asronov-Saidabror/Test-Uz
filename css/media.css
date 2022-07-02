@@ -26,6 +26,12 @@
 }
 
 @media(max-width: 1010px) {
+    .test_bosh{
+        margin-top: 14%;
+    }
+    .dawdawd, .sfkjndgb{
+        display: none;
+    }
     .container-sc2 img {
         width: 500px;
         margin-top: 30px;
@@ -64,10 +70,6 @@
 
     .about h3 {
         font-size: 50px;
-    }
-
-    .test_bosh {
-        margin-top: 40%;
     }
 
 }
@@ -124,15 +126,8 @@
     .container-sc2 img {
         display: none;
     }
-
-    .section-2 {
-        background: rgb(224, 224, 224);
-    }
-
-    .inp_name,
-    .inp_emails,
-    .mas {
-        justify-content: center;
+    .section-3{
+        background: #00fbff;
     }
 }
 
@@ -166,12 +161,36 @@
         display: flex;
     }
 
-    .inp_name, .inp_emails input, .mas textarea {
+    .inp_name input, .inp_emails input, .mas textarea {
         width: 300px;
+    }
+    .addButton{
+        margin-bottom: 40px;
     }
 }
 
 @media(max-width: 450px) {
+
+    .alar a{
+        width: 40px;
+        height: 40px;
+    }
+
+    .alar a img {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+    }
+    
+
+    .devBox{
+        width: 300px;
+        height: 300px;
+    }
+
+    .devContent h2{
+        font-size: 1em;
+    }
 
     .nav {
         padding: 15px 60px;
@@ -188,6 +207,10 @@
     .submit_button {
         width: 240px;
         height: 60px;
+    }
+    .minSSS{
+        width: 235px;
+        height: 55px;
     }
 
     .button_link {
@@ -222,6 +245,12 @@
 
     .section-2 {
         display: none;
+    }
+
+    .main_card {
+        width: 270px;
+        min-height: 550px;
+        margin: 20px;
     }
 
 }

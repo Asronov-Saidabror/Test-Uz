@@ -320,11 +320,6 @@ nav.nav3 {
     }
 }
 
-.submit_button:hover::before{
-    height: 300px;
-    z-index: 899;
-}
-
 .minSSS{
     width: 265px;
     height: 65px;
@@ -608,7 +603,7 @@ nav.nav3 {
 .inp_emails {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .email {
@@ -639,7 +634,7 @@ nav.nav3 {
 .mas {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .send_mes {
@@ -901,7 +896,8 @@ nav.nav3 {
 }
 
 .addBox {
-    width: 400px;
+    width: 600px;
+    padding-top: 30px;
     min-height: 400px;
     background: #fff;
     border-radius: 10px;
@@ -913,7 +909,7 @@ nav.nav3 {
 }
 
 .Tinp {
-    width: 350px;
+    width: 90%;
     height: 30px;
     border: none;
     outline: none;
@@ -925,7 +921,7 @@ nav.nav3 {
 }
 
 .Tarea {
-    width: 350px;
+    width: 90%;
     height: 150px;
     border: none;
     outline: none;
@@ -1004,7 +1000,7 @@ nav.nav3 {
     content: '';
     position: absolute;
     inset: 6px;
-    background: #162052;
+    background: #152052;
     border-radius: 50%;
     z-index: 1;
 }
@@ -1125,4 +1121,96 @@ nav.nav3 {
     width: 40px;
     height: 40px;
     margin-left: 25px;
+}
+.topBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFCC70;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+.topBoxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFCC70;
+    position: fixed;
+    bottom: 30px;
+    right: -100px;
+    cursor: pointer;
+}
+.topBoxs img{
+    width: 60px;
+    height: 60px;
+}
+.topBox img{
+    width: 60px;
+    height: 60px;
+}
+.drop{
+    border-radius: 10px;
+    border: 3px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    place-content: center;
+    padding: 2rem;
+}
+.active{
+    border: 3px solid #4b4b4b;
+    background: #edccff;
+}
+.drop img{
+    width: 60px;
+    height: 60px;
+}
+.drop .text{
+    text-align: center;
+    font-weight: 500;
+    color: #443f46;
+    margin-top: 1rem;
+}
+.progress{
+    background: #000;
+    width: 0%;
+    height: 15px;
+    display: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.drop label{
+    background: #000;
+    padding: 0.7rem 1.8rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.file-input{
+    display: none;
+}
+.line{
+    width: 100px;
+    height: 1px;
+    background: #949494;
+}
+.or-con{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+.or{
+    margin: 0 1rem;
+    font-weight: 500;
+    color: #443f46;
 }

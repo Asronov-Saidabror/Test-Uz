@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     const blackBg = document.querySelector('.blackBg'),
         addb = document.querySelector('.addb'),
-        uploadImg = document.querySelector('.uploadImg'),
+        uploadImg = document.querySelector('.file-input'),
         addc = document.querySelector('.addc'),
         addButton = document.querySelector('.addButton');
 
@@ -109,5 +109,47 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 0;
         `
     })
-    var s = scrollr.init()
+
+    const drop = document.querySelector('.drop');
+    const input = document.querySelector('.drop input');
+    const text = document.querySelector('.text');
+    const progress = document.querySelector('.progress');
+
+    let files = []
+
+    input.addEventListener('change', () => {
+        drop.style.display = 'none'
+        upload();
+    });
+    drop.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        text.innerHTML = "Sichqonchani qo'yib yuboring."
+        drop.classList.add("active")
+    })
+    drop.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        text.innerHTML = "Fan rasmini olib kelib tashlang."
+        drop.classList.remove("active")
+    })
+    drop.addEventListener('drop', (e) => {
+        e.preventDefault();
+        files = e.dataTransfer.files;
+        drop.style.display= "none"
+        upload();
+    })
+
+    //upload logic
+    function upload() {
+        let intervalCount = 0.25;
+        progress.style.display = "block";
+        progress.style.width = `${18 * intervalCount}%`;
+        const interval = setInterval(() => {
+            intervalCount += 0.25;
+            progress.style.width = `${18 * intervalCount}%`;
+            if (intervalCount == 5) {
+                clearInterval(interval)
+            }
+        }, 100);
+    }
+    
 })
