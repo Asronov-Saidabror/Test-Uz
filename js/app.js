@@ -12,6 +12,99 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     window.addEventListener('scroll', function () {
+        const topBox = document.querySelector('.topBox');
+        if (window.scrollY > 100) {
+            topBox.style = `
+            right: 30px;
+            `
+        } else {
+            topBox.style = `
+            right: -100px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const testbosh = document.querySelector('.test_bosh');
+        if (window.scrollY > 50) {
+            testbosh.style = `
+            opacity: 0;
+            right: -500px;
+            `
+        } else {
+            testbosh.style = `
+            opacity: 1;
+            right: 0;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const maintitle = document.querySelector('.main_title');
+        if (window.scrollY > 200) {
+            maintitle.style = `
+            opacity: 1;
+            right: 0;
+            `
+        } if (window.scrollY > 800) {
+            maintitle.style = `
+            opacity: 0;
+            right: -500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const sfkjndgb = document.querySelector('.sfkjndgb');
+        if (window.scrollY > 1700) {
+            sfkjndgb.style = `
+            left: 0;
+            `
+        } if (window.scrollY > 2200) {
+            sfkjndgb.style = `
+            left: -500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const dawdawd = document.querySelector('.dawdawd');
+        if (window.scrollY > 1700) {
+            dawdawd.style = `
+            right: 0;
+            `
+        } if (window.scrollY > 2200) {
+            dawdawd.style = `
+            right: -500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const top_cards = document.querySelector('.top_cards');
+        if (window.scrollY > 350) {
+            top_cards.style = `
+            opacity: 1;
+            right: 0;
+            `
+        } if (window.scrollY > 1700) {
+            top_cards.style = `
+            opacity: 0;
+            right: 500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const formDiv = document.querySelector('.formDiv');
+        if (window.scrollY > 1800) {
+            formDiv.style = `
+            opacity: 1;
+            right: 0;
+            `
+        } if (window.scrollY > 2200) {
+            formDiv.style = `
+            opacity: 0;
+            right: -500px;
+            `
+        }
+    })
+    
+    window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.nav');
         navbar.classList.toggle('nav2', window.scrollY > 0)
     })

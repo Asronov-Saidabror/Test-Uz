@@ -6,6 +6,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root {
     --red: rgb(255, 0, 0);
     --black: #000;
@@ -250,6 +254,7 @@ nav.nav3 {
     justify-content: center;
     flex-direction: column;
     margin-top: 17%;
+    transition: 0.5s;
 }
 
 .header_title {
@@ -364,6 +369,9 @@ nav.nav3 {
     text-align: center;
     font-size: var(--max-text);
     padding: 20px 0 30px 0;
+    opacity: 0;
+    right: -500px;
+    transition: 0.5s;
 }
 
 .top_cards {
@@ -371,6 +379,9 @@ nav.nav3 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    transition: 0.5s;
+    opacity: 0;
+    right: 500px;
 }
 
 .main_card {
@@ -1094,18 +1105,25 @@ nav.nav3 {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    transition: 0.5s;
+    right: -500px;
 }
 .formDiv{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    transition: 0.5s;
+    right: -500px;
+    opacity: 0;
 }
 .sfkjndgb{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    transition: 0.5s;
+    left: -500px;
 }
 .teleg{
     display: flex;
@@ -1132,25 +1150,9 @@ nav.nav3 {
     background: #FFCC70;
     position: fixed;
     bottom: 30px;
-    right: 30px;
-    cursor: pointer;
-}
-.topBoxs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #FFCC70;
-    position: fixed;
-    bottom: 30px;
     right: -100px;
     cursor: pointer;
-}
-.topBoxs img{
-    width: 60px;
-    height: 60px;
+    transition: 0.5s;
 }
 .topBox img{
     width: 60px;
