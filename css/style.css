@@ -1199,7 +1199,7 @@ nav.nav3 {
     margin-top: 1rem;
 }
 .progress{
-    background: #000;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     width: 0%;
     height: 15px;
     display: none;

@@ -320,18 +320,28 @@ h3 {
     overflow: hidden;
 }
 .time{
-    width: 100%;
+    width: 99%;
+    height: 3px;
+    position: relative;
+    border-radius: 5px;
+}
+.time::before{
+    width: 99%;
     height: 3px;
     border-radius: 5px;
+    content: '';
     animation: time 30s linear;
+    right: 0;
+    top: 0;
+    position: absolute;
 }
 @keyframes time {
     0%{
         background: #00ff00;
-        transform: translateX(0);
+        width: 99%;
     }100%{
         background: red;
-        transform: translateX(102%);
+        width: 0%;
     }
 }
 .controls{

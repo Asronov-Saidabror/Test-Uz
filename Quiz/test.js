@@ -85,7 +85,5 @@ for (let i = 0; i < ff.length; i++) {
 }
 
 function timeLine() {
-    tim.style = `
-        transform: translateX(0);
-    `
+    
 }
