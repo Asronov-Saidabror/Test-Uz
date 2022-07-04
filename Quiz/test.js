@@ -31,7 +31,7 @@ const ff = document.querySelectorAll('#f'),
     tt = document.querySelectorAll('#t'),
     qor = document.querySelector('.qorongi'),
     qor2 = document.querySelector('.qorongi2'),
-    tim = document.querySelector('.time'),
+    tim = document.querySelector('.dsalomtinme'),
     tb1 = document.querySelector('.TBody'),
     tb2 = document.querySelector('.TBody2'),
     tb3 = document.querySelector('.TBody3'),
@@ -85,5 +85,5 @@ for (let i = 0; i < ff.length; i++) {
 }
 
 function timeLine() {
-    
+    tim.style.width = '100%'
 }
