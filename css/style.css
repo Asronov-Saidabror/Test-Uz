@@ -257,6 +257,16 @@ nav.nav3 {
     transition: 0.5s;
 }
 
+.titlwd {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/360_F_413926200_GjEKRqYifPHPp5BszSVfP4HPNqJM2ct8.jpg') no-repeat center / cover;
+    height: 100vh;
+    z-index: 999;
+    overflow: hidden;
+}
+
 .header_title {
     color: var(--white);
     font-size: var(--title-text);
@@ -982,8 +992,70 @@ nav.nav3 {
 }
 
 .aboutDev {
+    overflow: hidden;
     height: 550px;
     background: #152052;
+}
+
+.ssppaann{
+    position: absolute;
+    background: #F00;
+    width: 5px;
+    height: 5px;
+    animation: ee3 2s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes ee3{
+    0%{
+        background: #F00;
+    }
+    25%{
+        background: #00ff00;
+    }
+    50%{
+        background: rgb(0, 0, 255);
+    }
+    75%{
+        background: rgb(255, 255, 255);
+    }
+    100%{
+        background: yellow;
+    }
+}
+
+/* .ssppaann::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation: movessppaann 2s linear infinite;
+}
+.ssppaann::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation: movesspaann 2s linear infinite;
+} */
+
+@keyframes movesspaann{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-300px);
+    }
+}
+@keyframes movessppaann{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(300px);
+    }
 }
 
 .devBox {

@@ -41,7 +41,7 @@ const ff = document.querySelectorAll('#f'),
     tb7 = document.querySelector('.TBody7'),
     tb8 = document.querySelector('.TBody8'),
     tb9 = document.querySelector('.TBody9'),
-    tb0 = document.querySelector('.TBody0'),
+    tb10 = document.querySelector('.TBody0'),
     qol = document.querySelector('.qolgani');
     
     let NT = 1
@@ -49,6 +49,7 @@ const ff = document.querySelectorAll('#f'),
     qol.innerHTML = `${NT}/10`
 for (let i = 0; i < tt.length; i++) {
     tt[i].addEventListener('click', function () {
+        timeNone()
         qor.style = `
         display: flex;
         opacity: 1;
@@ -58,7 +59,6 @@ for (let i = 0; i < tt.length; i++) {
             tb1.style.display = 'none'
             timeLine()
             qol.innerHTML = `${NT + 1}/10`
-            tim.style.transform = 'translateX(0)'
             qor.style = `
             display: none;
             opacity: 0;
@@ -68,11 +68,14 @@ for (let i = 0; i < tt.length; i++) {
 }
 for (let i = 0; i < ff.length; i++) {
     ff[i].addEventListener('click', function () {
+        
+        timeNone()
         qor2.style = `
         display: flex;
         opacity: 1;
         `
         setTimeout(() => {
+            timeLine()
             qol.innerHTML = `${NT + 1}/10`
             tb2.style.display = 'flex'
             tb1.style.display = 'none'
@@ -84,6 +87,13 @@ for (let i = 0; i < ff.length; i++) {
     })
 }
 
+
+
+
 function timeLine() {
     tim.style.width = '100%'
+    tim.style.animation = 'time 30s linear'
+}
+function timeNone() {
+    tim.style.animation = 'none'
 }

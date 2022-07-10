@@ -281,5 +281,26 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }, 100);
     }
+
+    const chizish = document.querySelector(".aboutDev");
+
+    chizish.addEventListener("mousemove", function(e) {
+        let ssppan = document.createElement("span");
+        ssppan.classList.add("ssppaann")
+        let x = e.offsetX;
+        let y = e.offsetY;
+        ssppan.style.left = x + "px"
+        ssppan.style.top = y + "px"
+
+
+        let transformValue = Math.random * 360
+        ssppan.style.transform = `rotate(${transformValue}deg)`
+
+        chizish.appendChild(ssppan);
+
+        setTimeout(() => {
+            ssppan.remove()
+        }, 2000);
+    })
     
 })

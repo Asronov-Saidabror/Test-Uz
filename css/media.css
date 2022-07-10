@@ -132,6 +132,13 @@
 }
 
 @media(max-width: 670px) {
+    .titlwd{
+        display: flex;
+        overflow: hidden;
+    }
+    .web{
+        display: none;
+    }
     .oq {
         width: 70%;
     }
