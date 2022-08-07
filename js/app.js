@@ -16,10 +16,12 @@ window.addEventListener('DOMContentLoaded', function () {
         if (window.scrollY > 100) {
             topBox.style = `
             right: 30px;
+            bottom: 30px;
             `
         } else {
             topBox.style = `
             right: -100px;
+            botom: 100px;
             `
         }
     })
@@ -44,7 +46,7 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY > 800) {
+        } if (window.scrollY < 200) {
             maintitle.style = `
             opacity: 0;
             right: -500px;
@@ -57,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
             sfkjndgb.style = `
             left: 0;
             `
-        } if (window.scrollY > 2200) {
+        } if (window.scrollY < 1800) {
             sfkjndgb.style = `
             left: -500px;
             `
@@ -69,7 +71,7 @@ window.addEventListener('DOMContentLoaded', function () {
             dawdawd.style = `
             right: 0;
             `
-        } if (window.scrollY > 2200) {
+        } if (window.scrollY < 1800) {
             dawdawd.style = `
             right: -500px;
             `
@@ -82,10 +84,52 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY > 1700) {
+        } if (window.scrollY < 350) {
             top_cards.style = `
             opacity: 0;
             right: 500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const dwdawdawda = document.querySelector('.abou');
+        if (window.scrollY > 250) {
+            dwdawdawda.style = `
+            opacity: 1;
+            right: 0;
+            `
+        } if (window.scrollY < 250) {
+            dwdawdawda.style = `
+            opacity: 0;
+            right: 500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const ewqweq = document.querySelector('.fdse');
+        if (window.scrollY > 450) {
+            ewqweq.style = `
+            opacity: 1;
+            left: 0;
+            `
+        } if (window.scrollY < 450) {
+            ewqweq.style = `
+            opacity: 0;
+            left: 500px;
+            `
+        }
+    })
+    window.addEventListener('scroll', function () {
+        const bow = document.querySelector('.bow');
+        if (window.scrollY > 950) {
+            bow.style = `
+            opacity: 1;
+            transform: rotateX(0deg);
+            `
+        } if (window.scrollY < 950) {
+            bow.style = `
+            opacity: 0;
+            transform: rotateX(360deg);
             `
         }
     })
@@ -96,7 +140,7 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY > 2400) {
+        } if (window.scrollY < 1600) {
             formDiv.style = `
             opacity: 0;
             right: -500px;
@@ -110,7 +154,7 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             left: 0;
             `
-        } if (window.scrollY > 2800) {
+        } if (window.scrollY < 2400) {
             about.style = `
             opacity: 0;
             left: -500px;
@@ -124,6 +168,11 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             left: 0;
             `
+        } if (window.scrollY < 2800) {
+            devBox.style = `
+            opacity: 0;
+            left: 100px;
+            `
         }
     })
     window.addEventListener('scroll', function () {
@@ -133,7 +182,7 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY > 2800) {
+        } if (window.scrollY < 2400) {
             ompoaef.style = `
             opacity: 0;
             right: -500px;
@@ -203,7 +252,10 @@ window.addEventListener('DOMContentLoaded', function () {
         addc = document.querySelector('.addc'),
         addButton = document.querySelector('.addButton');
 
-    addb.addEventListener('click', function () {
+    addb.addEventListener('submit', function () {
+
+
+
         const div = document.createElement('div'),
             img = document.createElement('img'),
             div2 = document.createElement('div'),

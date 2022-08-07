@@ -1,7 +1,7 @@
 const javobt = document.querySelectorAll('#true'),
     notogri = document.querySelectorAll('#false')
 tek = document.querySelectorAll('#erd')
-e = 0
+var e = 0
 
 for (let i = 0; i < javobt.length; i++) {
     javobt[i].addEventListener('click', function () {
@@ -12,7 +12,9 @@ for (let i = 0; i < javobt.length; i++) {
 for (let i = 0; i < tek.length; i++) {
     tek[i].addEventListener('click', function () {
         // location.href = 'tekshirish.html'
-        alert(`To'g'ri javoblar soni ${e} ta`)
+        alert(`To'g'ri javoblar soni ${e} ta`);
+        var r2 = e*e/10
+        alert(`Siz ${e}% to'pladingsiz`);
     })
 }
 
@@ -42,13 +44,15 @@ const ff = document.querySelectorAll('#f'),
     tb8 = document.querySelector('.TBody8'),
     tb9 = document.querySelector('.TBody9'),
     tb10 = document.querySelector('.TBody0'),
+    ballllr = document.querySelector('.Ball'),
     qol = document.querySelector('.qolgani');
     
-    let NT = 1
+    var NT = 1
+    var ball = 0
     
     qol.innerHTML = `${NT}/10`
 for (let i = 0; i < tt.length; i++) {
-    tt[i].addEventListener('click', function () {
+    tt[0].addEventListener('click', function () {
         timeNone()
         qor.style = `
         display: flex;
@@ -58,7 +62,7 @@ for (let i = 0; i < tt.length; i++) {
             tb2.style.display = 'flex'
             tb1.style.display = 'none'
             timeLine()
-            qol.innerHTML = `${NT + 1}/10`
+            qol.innerHTML = `${NT++}/10`
             qor.style = `
             display: none;
             opacity: 0;
@@ -66,8 +70,117 @@ for (let i = 0; i < tt.length; i++) {
         }, 2000);
     })
 }
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb2.style.display = 'flex'
+//         tb1.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
 for (let i = 0; i < ff.length; i++) {
-    ff[i].addEventListener('click', function () {
+    ff[0].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT++}/10`
+            tb2.style.display = 'flex'
+            tb1.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[1].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT++}/10`
+            tb2.style.display = 'flex'
+            tb1.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[2].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT++}/10`
+            tb2.style.display = 'flex'
+            tb1.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[1].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb3.style.display = 'flex'
+            tb2.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT++}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[3].addEventListener('click', function () {
         
         timeNone()
         qor2.style = `
@@ -77,8 +190,688 @@ for (let i = 0; i < ff.length; i++) {
         setTimeout(() => {
             timeLine()
             qol.innerHTML = `${NT + 1}/10`
-            tb2.style.display = 'flex'
-            tb1.style.display = 'none'
+            tb3.style.display = 'flex'
+            tb2.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[4].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb3.style.display = 'flex'
+            tb2.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[5].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb3.style.display = 'flex'
+            tb2.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[2].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb4.style.display = 'flex'
+            tb3.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[6].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb4.style.display = 'flex'
+            tb3.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[7].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb4.style.display = 'flex'
+            tb3.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[8].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb4.style.display = 'flex'
+            tb3.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[3].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb5.style.display = 'flex'
+            tb4.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[9].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb5.style.display = 'flex'
+            tb4.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[10].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb5.style.display = 'flex'
+            tb4.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[11].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb5.style.display = 'flex'
+            tb4.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[4].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb6.style.display = 'flex'
+            tb5.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[12].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb6.style.display = 'flex'
+            tb5.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[13].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb6.style.display = 'flex'
+            tb5.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[14].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb6.style.display = 'flex'
+            tb5.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[5].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb7.style.display = 'flex'
+            tb6.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[15].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb7.style.display = 'flex'
+            tb6.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[16].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb7.style.display = 'flex'
+            tb6.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[17].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb7.style.display = 'flex'
+            tb6.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[6].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb8.style.display = 'flex'
+            tb7.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[18].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb8.style.display = 'flex'
+            tb7.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[19].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb8.style.display = 'flex'
+            tb7.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[20].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb8.style.display = 'flex'
+            tb7.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[7].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb9.style.display = 'flex'
+            tb8.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[21].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb9.style.display = 'flex'
+            tb8.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[22].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb9.style.display = 'flex'
+            tb8.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[23].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb9.style.display = 'flex'
+            tb8.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+for (let i = 0; i < tt.length; i++) {
+    tt[8].addEventListener('click', function () {
+        timeNone()
+        qor.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            tb10.style.display = 'flex'
+            tb9.style.display = 'none'
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            qor.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+}
+// setTimeout(() => {
+//     timeNone()
+//     qor2.style = `
+//     display: flex;
+//     opacity: 1;
+//     `
+//     setTimeout(() => {
+//         timeLine()
+//         qol.innerHTML = `${NT + 1}/10`
+//         tb3.style.display = 'flex'
+//         tb2.style.display = 'none'
+//         qor2.style = `
+//         display: none;
+//         opacity: 0;
+//         `
+//     }, 2000);
+// }, 30000);
+for (let i = 0; i < ff.length; i++) {
+    ff[24].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb10.style.display = 'flex'
+            tb9.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[25].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb10.style.display = 'flex'
+            tb9.style.display = 'none'
+            qor2.style = `
+            display: none;
+            opacity: 0;
+            `
+        }, 2000);
+    })
+    ff[26].addEventListener('click', function () {
+        
+        timeNone()
+        qor2.style = `
+        display: flex;
+        opacity: 1;
+        `
+        setTimeout(() => {
+            timeLine()
+            qol.innerHTML = `${NT + 1}/10`
+            tb10.style.display = 'flex'
+            tb9.style.display = 'none'
             qor2.style = `
             display: none;
             opacity: 0;
@@ -96,4 +889,4 @@ function timeLine() {
 }
 function timeNone() {
     tim.style.animation = 'none'
-}
+}               

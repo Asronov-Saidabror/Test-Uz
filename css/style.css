@@ -131,6 +131,8 @@ body{
 
 .text-senter {
     text-align: center;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .flx-wrap {
@@ -379,9 +381,9 @@ nav.nav3 {
     text-align: center;
     font-size: var(--max-text);
     padding: 20px 0 30px 0;
+    transition: 0.5s;
     opacity: 0;
     right: -500px;
-    transition: 0.5s;
 }
 
 .top_cards {
@@ -487,9 +489,9 @@ nav.nav3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
     opacity: 0;
     left: -500px;
-    transition: 0.5s;
 }
 .abou {
     padding: 60px;
@@ -497,6 +499,9 @@ nav.nav3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    right: 500px;
+    transition: 0.5s;
 }
 
 .mini_section-1 {
@@ -557,9 +562,9 @@ nav.nav3 {
 .container-sc2 img {
     width: 800px;
     margin-top: 40px;
-    right: -500px;
-    opacity: 0;
     transition: 0.5s;
+    opacity: 0;
+    right: -500px;
 }
 
 .container-sp2 {
@@ -569,8 +574,15 @@ nav.nav3 {
     flex-direction: column;
 }
 
-.container-sp2 img {
+.fdse {
     width: 90%;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    opacity: 0;
+    left: -500px;
+}
+.fdsdd {
+    width: 50%;
     margin-bottom: 30px;
 }
 
@@ -586,6 +598,9 @@ nav.nav3 {
     justify-content: center;
     margin-bottom: 50px;
     text-decoration: none;
+    transition: 0.8s ease;
+    transform: rotateX(360deg);
+    opacity: 0;
 }
 
 .bow:hover {
@@ -924,8 +939,10 @@ nav.nav3 {
     display: none;
     opacity: 0;
     transition: 0.5s;
-    justify-content: center;
+
     align-items: center;
+    flex-direction: column;
+    padding: 0;
 }
 
 .addBox {
@@ -964,8 +981,7 @@ nav.nav3 {
     resize: none;
 }
 
-.addb,
-.addc {
+.addb {
     width: 150px;
     height: 50px;
     background: #000;
@@ -978,10 +994,28 @@ nav.nav3 {
     justify-content: center;
 }
 
-.sdada {
+.addc {
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.addc img {
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease;
+}
+
+.addc:hover img{
+    background: rgb(0, 0, 255);
+    border-radius: 50%;
 }
 
 .containerd {
@@ -1065,9 +1099,9 @@ nav.nav3 {
     background: rgb(0, 0, 0, 0.5);
     border-radius: 50%;
     overflow: hidden;
-    left: -500px;
-    opacity: 0;
     transition: 0.5s;
+    opacity: 0;
+    left: 100px;
 }
 
 .devBox::before {
@@ -1201,8 +1235,8 @@ nav.nav3 {
     justify-content: center;
     width: 100%;
     transition: 0.5s;
-    right: -500px;
     opacity: 0;
+    right: -500px;
 }
 .sfkjndgb{
     display: flex;
@@ -1236,7 +1270,7 @@ nav.nav3 {
     border-radius: 50%;
     background: #FFCC70;
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     right: -100px;
     cursor: pointer;
     transition: 0.5s;
