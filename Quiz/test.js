@@ -11,10 +11,10 @@ for (let i = 0; i < javobt.length; i++) {
 
 for (let i = 0; i < tek.length; i++) {
     tek[i].addEventListener('click', function () {
-        // location.href = 'tekshirish.html'
-        alert(`To'g'ri javoblar soni ${e} ta`);
-        var r2 = e*e/10
-        alert(`Siz ${e}% to'pladingsiz`);
+        location.href = 'tekshirish.html'
+        // alert(`To'g'ri javoblar soni ${e} ta`);
+        // var r2 = e*e/10
+        // alert(`Siz ${e}% to'pladingsiz`);
     })
 }
 
@@ -47,7 +47,7 @@ const ff = document.querySelectorAll('#f'),
     ballllr = document.querySelector('.Ball'),
     qol = document.querySelector('.qolgani');
     
-    var NT = 1
+    let NT = 1
     var ball = 0
     
     qol.innerHTML = `${NT}/10`

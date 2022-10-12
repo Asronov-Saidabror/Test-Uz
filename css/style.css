@@ -6,7 +6,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -295,31 +295,40 @@ nav.nav3 {
     animation: wiggle 2s linear infinite;
 }
 
-@keyframes wiggle{
-    0%, 7%{
+@keyframes wiggle {
+
+    0%,
+    7% {
         transform: rotateZ(0);
     }
-    15%{
+
+    15% {
         transform: rotateZ(-15deg);
     }
-    20%{
+
+    20% {
         transform: rotateZ(10deg);
     }
-    25%{
+
+    25% {
         transform: rotateZ(-10deg);
     }
-    30%{
+
+    30% {
         transform: rotateZ(6deg);
     }
-    35%{
+
+    35% {
         transform: rotateZ(-4deg);
     }
-    40%, 100%{
+
+    40%,
+    100% {
         transform: rotateZ(0);
     }
 }
 
-.submit_button::before{
+.submit_button::before {
     content: '';
     position: absolute;
     width: 300px;
@@ -330,14 +339,16 @@ nav.nav3 {
 }
 
 @keyframes e4e4 {
-    0%{
+    0% {
         transform: rotate(0deg);
-    }100%{
+    }
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.minSSS{
+.minSSS {
     width: 265px;
     height: 65px;
     overflow: hidden;
@@ -348,9 +359,10 @@ nav.nav3 {
     border-radius: 10px;
     transition: 0.5s ease;
     background: #152052;
-    
+
 }
-.minSSS img{
+
+.minSSS img {
     z-index: 900;
 }
 
@@ -493,6 +505,7 @@ nav.nav3 {
     opacity: 0;
     left: -500px;
 }
+
 .abou {
     padding: 60px;
     display: flex;
@@ -581,6 +594,7 @@ nav.nav3 {
     opacity: 0;
     left: -500px;
 }
+
 .fdsdd {
     width: 50%;
     margin-bottom: 30px;
@@ -1013,7 +1027,7 @@ nav.nav3 {
     transition: 0.5s ease;
 }
 
-.addc:hover img{
+.addc:hover img {
     background: rgb(0, 0, 255);
     border-radius: 50%;
 }
@@ -1031,7 +1045,7 @@ nav.nav3 {
     background: #152052;
 }
 
-.ssppaann{
+.ssppaann {
     position: absolute;
     background: #F00;
     width: 5px;
@@ -1040,20 +1054,24 @@ nav.nav3 {
     pointer-events: none;
 }
 
-@keyframes ee3{
-    0%{
+@keyframes ee3 {
+    0% {
         background: #F00;
     }
-    25%{
+
+    25% {
         background: #00ff00;
     }
-    50%{
+
+    50% {
         background: rgb(0, 0, 255);
     }
-    75%{
+
+    75% {
         background: rgb(255, 255, 255);
     }
-    100%{
+
+    100% {
         background: yellow;
     }
 }
@@ -1075,19 +1093,22 @@ nav.nav3 {
     animation: movesspaann 2s linear infinite;
 } */
 
-@keyframes movesspaann{
-    0%{
+@keyframes movesspaann {
+    0% {
         transform: translate(0);
     }
-    100%{
+
+    100% {
         transform: translate(-300px);
     }
 }
-@keyframes movessppaann{
-    0%{
+
+@keyframes movessppaann {
+    0% {
         transform: translate(0);
     }
-    100%{
+
+    100% {
         transform: translate(300px);
     }
 }
@@ -1229,7 +1250,8 @@ nav.nav3 {
     transition: 0.5s;
     right: -500px;
 }
-.formDiv{
+
+.formDiv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1238,7 +1260,8 @@ nav.nav3 {
     opacity: 0;
     right: -500px;
 }
-.sfkjndgb{
+
+.sfkjndgb {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1246,7 +1269,8 @@ nav.nav3 {
     transition: 0.5s;
     left: -500px;
 }
-.teleg{
+
+.teleg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1256,12 +1280,14 @@ nav.nav3 {
     width: 200px;
     height: 70px;
 }
-.teleg img{
+
+.teleg img {
     width: 40px;
     height: 40px;
     margin-left: 25px;
 }
-.topBox{
+
+.topBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1275,11 +1301,13 @@ nav.nav3 {
     cursor: pointer;
     transition: 0.5s;
 }
-.topBox img{
+
+.topBox img {
     width: 60px;
     height: 60px;
 }
-.drop{
+
+.drop {
     border-radius: 10px;
     border: 3px dashed #aaa;
     display: flex;
@@ -1290,21 +1318,25 @@ nav.nav3 {
     place-content: center;
     padding: 2rem;
 }
-.active{
+
+.active {
     border: 3px solid #4b4b4b;
     background: #edccff;
 }
-.drop img{
+
+.drop img {
     width: 60px;
     height: 60px;
 }
-.drop .text{
+
+.drop .text {
     text-align: center;
     font-weight: 500;
     color: #443f46;
     margin-top: 1rem;
 }
-.progress{
+
+.progress {
     background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     width: 0%;
     height: 15px;
@@ -1312,27 +1344,32 @@ nav.nav3 {
     border-radius: 10px;
     transition: all 0.2s;
 }
-.drop label{
+
+.drop label {
     background: #000;
     padding: 0.7rem 1.8rem;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
 }
-.file-input{
+
+.file-input {
     display: none;
 }
-.line{
+
+.line {
     width: 100px;
     height: 1px;
     background: #949494;
 }
-.or-con{
+
+.or-con {
     display: flex;
     align-items: center;
     margin: 0.5rem;
 }
-.or{
+
+.or {
     margin: 0 1rem;
     font-weight: 500;
     color: #443f46;

@@ -46,7 +46,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY < 200) {
+        }
+        if (window.scrollY < 200) {
             maintitle.style = `
             opacity: 0;
             right: -500px;
@@ -59,7 +60,8 @@ window.addEventListener('DOMContentLoaded', function () {
             sfkjndgb.style = `
             left: 0;
             `
-        } if (window.scrollY < 1800) {
+        }
+        if (window.scrollY < 1800) {
             sfkjndgb.style = `
             left: -500px;
             `
@@ -71,7 +73,8 @@ window.addEventListener('DOMContentLoaded', function () {
             dawdawd.style = `
             right: 0;
             `
-        } if (window.scrollY < 1800) {
+        }
+        if (window.scrollY < 1800) {
             dawdawd.style = `
             right: -500px;
             `
@@ -84,7 +87,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY < 350) {
+        }
+        if (window.scrollY < 350) {
             top_cards.style = `
             opacity: 0;
             right: 500px;
@@ -98,7 +102,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY < 250) {
+        }
+        if (window.scrollY < 250) {
             dwdawdawda.style = `
             opacity: 0;
             right: 500px;
@@ -112,7 +117,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             left: 0;
             `
-        } if (window.scrollY < 450) {
+        }
+        if (window.scrollY < 450) {
             ewqweq.style = `
             opacity: 0;
             left: 500px;
@@ -126,7 +132,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             transform: rotateX(0deg);
             `
-        } if (window.scrollY < 950) {
+        }
+        if (window.scrollY < 950) {
             bow.style = `
             opacity: 0;
             transform: rotateX(360deg);
@@ -140,7 +147,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY < 1600) {
+        }
+        if (window.scrollY < 1600) {
             formDiv.style = `
             opacity: 0;
             right: -500px;
@@ -154,7 +162,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             left: 0;
             `
-        } if (window.scrollY < 2400) {
+        }
+        if (window.scrollY < 2400) {
             about.style = `
             opacity: 0;
             left: -500px;
@@ -168,7 +177,8 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             left: 0;
             `
-        } if (window.scrollY < 2800) {
+        }
+        if (window.scrollY < 2800) {
             devBox.style = `
             opacity: 0;
             left: 100px;
@@ -182,14 +192,15 @@ window.addEventListener('DOMContentLoaded', function () {
             opacity: 1;
             right: 0;
             `
-        } if (window.scrollY < 2400) {
+        }
+        if (window.scrollY < 2400) {
             ompoaef.style = `
             opacity: 0;
             right: -500px;
             `
         }
     })
-    
+
     window.addEventListener('scroll', function () {
         const navbar = document.querySelector('.nav');
         navbar.classList.toggle('nav2', window.scrollY > 0)
@@ -316,7 +327,7 @@ window.addEventListener('DOMContentLoaded', function () {
     drop.addEventListener('drop', (e) => {
         e.preventDefault();
         files = e.dataTransfer.files;
-        drop.style.display= "none"
+        drop.style.display = "none"
         upload();
     })
 
@@ -336,7 +347,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     const chizish = document.querySelector(".aboutDev");
 
-    chizish.addEventListener("mousemove", function(e) {
+    chizish.addEventListener("mousemove", function (e) {
         let ssppan = document.createElement("span");
         ssppan.classList.add("ssppaann")
         let x = e.offsetX;
@@ -354,5 +365,5 @@ window.addEventListener('DOMContentLoaded', function () {
             ssppan.remove()
         }, 2000);
     })
-    
+
 })

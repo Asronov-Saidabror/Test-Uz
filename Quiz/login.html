@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: rgb(38, 38, 38);
+        }
+
+        .box {
+            position: relative;
+            width: 380px;
+            height: 420px;
+            background: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg, transparent, aqua, aqua);
+            transform-origin: bottom right;
+            animation: annn 6s linear infinite;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 380px;
+            height: 420px;
+            background: linear-gradient(0deg, transparent, aqua, aqua);
+            transform-origin: bottom right;
+            animation: annn 6s linear infinite;
+            animation-delay: -3s;
+        }
+
+        @keyframes annn {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .form{
+            position: absolute;
+            inset: 2px;
+            border-radius: 8px;
+            background: rgb(38, 38, 38);
+            z-index: 10;
+        }
+        
+        form{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h2{
+            color: aqua;
+            text-align: center;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        input{
+            width: 300px;
+            background: transparent;
+            border-bottom: 2px solid aqua;
+            color: rgb(38, 38, 38);
+            outline: none;
+            height: 30px;
+            border-radius: 5px;
+            transition: 0.5s ease;
+        }
+
+        span{
+            color: aqua;
+        }
+    </style>
 </head>
+
 <body>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsFXfXcdfSYHg3zuEKQ1J2_J55gDm8qGSm7xeoz9aUuaVmjg/viewform?embedded=true" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="box">
+        <div class="form">
+            <h2>Tizimga Kirish</h2>
+            <form action="" method="get">
+                <input class="fs" type="text" required>
+                <span>Ism</span>
+                <input type="password" required>
+                <span>Parol</span>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        var input = document.querySelectorAll(".fs");
+
+        input.add
+    </script>
 </body>
+
 </html>
