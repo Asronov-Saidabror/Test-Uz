@@ -100,7 +100,7 @@
         background: #fff;
         top: 0;
         right: 0;
-        width: 380px;
+        width: 300px;
         height: 100%;
         display: flex;
         transition: 0.5s ease;
@@ -132,9 +132,13 @@
 }
 
 @media(max-width: 670px) {
-    .titlwd{
-        display: flex;
-        overflow: hidden;
+    .asdfg{
+        display: none;
+        opacity: 0;
+    }
+    .topBox{
+        display: none;
+        opacity: 0;
     }
     .web{
         display: none;
